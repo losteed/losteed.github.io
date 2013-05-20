@@ -19,7 +19,9 @@ $(document).ready(function(){
             else if(computeTop > initTop)
                 computeTop = initTop;
 
-            $('#centerPanel').css({ paddingTop: computeTop+'px' });
+            // high version only
+            if(initTop > lowLimit)
+                $('#centerPanel').css({ paddingTop: computeTop+'px' });
 
     }
     $(window).scroll(moveCenter);

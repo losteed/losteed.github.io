@@ -210,7 +210,7 @@ div.plus:hover span{
     -moz-animation: expand2 1s;
     -o-animation: expand2 1s;
     animation: expand2 1s;
-    height: 880px;
+    height: 900px;
 }
 div.exp ul{
     color: #bade8c;
@@ -346,7 +346,7 @@ div.blink{
 }
 @-webkit-keyframes expand2 {
   from { height: 5px; }
-  to   { height: 880px; }
+  to   { height: 900px; }
 }
 @keyframes blink {
     to {
@@ -359,7 +359,7 @@ div.blink{
 }
 @keyframes expand2 {
   from { height: 5px; }
-  to   { height: 880px; }
+  to   { height: 900px; }
 }
 
 @media screen and (max-width: 990px) {
@@ -369,10 +369,13 @@ div.blink{
     }
     #centerPanel{
         margin-left: 152px;
+        position: relative;
+        padding-top: 50px;
+        float: left;
     }
     #rightPanel{
         padding-top: 50px;
-        margin-left: 362px;
+        margin-left: 0px;
     }
     #loading{
         background-position: 153px 203px;
@@ -382,5 +385,8 @@ div.blink{
     }
     #tips div.info{
         width: 200px
+    }
+    div.exp ul{
+        margin-top: 20px;
     }
 }
