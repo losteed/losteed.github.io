@@ -322,7 +322,7 @@ div.exp ul img{
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: #000;
+    background: #000 url('../img/load.gif') no-repeat 228px 350px;
     z-index: 4;
 }
 
