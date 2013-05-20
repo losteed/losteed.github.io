@@ -361,3 +361,26 @@ div.blink{
   from { height: 5px; }
   to   { height: 880px; }
 }
+
+@media screen and (max-width: 990px) {
+    #leftPanel{
+        top: 50px;
+        left: 10px;
+    }
+    #centerPanel{
+        margin-left: 152px;
+    }
+    #rightPanel{
+        padding-top: 50px;
+        margin-left: 362px;
+    }
+    #loading{
+        background-position: 153px 203px;
+    }
+    #tips{
+        width: 220px
+    }
+    #tips div.info{
+        width: 200px
+    }
+}

@@ -10,11 +10,12 @@ $(document).ready(function(){
 
     // Align center Panel when scrolling
     function moveCenter(){
-            var initTop = 205;
+            var initTop = parseInt($('#leftPanel').css('top'));
+            var lowLimit = 61;
             var computeTop = initTop - ($(window).scrollTop());
 
-            if(computeTop < 61)
-                computeTop = 61;
+            if(computeTop < lowLimit && initTop > lowLimit)
+                computeTop = lowLimit;
             else if(computeTop > initTop)
                 computeTop = initTop;
 
