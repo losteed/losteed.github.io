@@ -1,0 +1,363 @@
+@font-face {
+    font-family: 'BebasRegular';
+    src: url('../fonts/BEBAS___-webfont.eot');
+    src: url('../fonts/BEBAS___-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/BEBAS___-webfont.woff') format('woff'),
+         url('../fonts/BEBAS___-webfont.ttf') format('truetype'),
+         url('../fonts/BEBAS___-webfont.svg#BebasRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+    line-height: 1;
+    color: #FFF;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+#background-image div{
+    background: url('../img/stripes.png');
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    opacity: 0.25;
+}
+#leftPanel{
+    position: fixed;
+    z-index: 3;
+    top: 205px;
+    left: 84px;
+    width: 132px;
+}
+
+#losteed{
+    background: url('../img/losteed.jpg');
+    width: 132px;
+    height: 132px;
+    margin-bottom: 12px;
+}
+#card{
+    background-color: rgba(0,0,0,0.35);
+    padding: 10px 10px 90px;
+    font-family: BebasRegular, Calibri, sans-serif;
+    font-size: 95%;
+    letter-spacing: .04px;
+}
+#card div.label{
+    border-top: 1px solid #FFF;
+    font-size: 185%;
+    margin-top: 6px;
+    padding: 7px 0 3px;
+}
+#card div{
+    font-size: 108%;
+}
+#card span.space{
+    width: 5px;
+    display: inline-block;
+}
+
+#centerPanel{
+    position: fixed;
+    z-index: 5;
+    width: 200px;
+    margin: 0 12px 0 228px;
+    font-family: BebasRegular, Calibri, sans-serif;
+}
+div.pseudo{
+     margin-bottom: 15px;
+     border: 9px solid #FFF;
+     border-right: 0;
+     border-left: 0;
+     padding: 11px 0 5px 0;
+     font-size: 360%;
+}
+div.name{
+     font-size: 160%;
+     margin-bottom: 11px;
+}
+#centerPanel span.space{
+    width: 9px;
+    display: inline-block;
+}
+div.plus{
+    display: none;
+    width: 13px;
+    height: 13px;
+    background-color: #000;
+    cursor: pointer;
+    padding: 6px;
+    overflow: hidden;
+    white-space: nowrap;
+    -webkit-transition: width 0.4s ease-in-out;
+    -o-transition: width 0.4s ease-in-out;
+    -moz-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+
+}
+div.plus span{
+    background: url('../img/plus.png') no-repeat left top;
+    width: 13px;
+    height: 13px;
+    display: inline-block;
+    -webkit-transition: -webkit-transform 0.4s ease-in-out;
+    -moz-transition: -moz-transform 0.4s ease-in-out;
+    -o-transition: -webkit-transform 0.4s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+    margin-right: 6px;
+}
+#centerPanel div.plus:hover{
+    width: 188px;
+}
+div.plus:hover span{
+    -webkit-transform: rotate(180deg);
+    -moz-transform: rotate(180deg);
+    -o-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+#centerPanel div.round{
+    display: none;
+    background-color: rgba(0,0,0,0.56);
+    padding: 10px;
+    font-family: Calibri;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    height: 5px;
+    overflow: hidden;
+}
+#centerPanel div.round img{
+    border-radius: 26px;
+    margin: 7px 0 7px;
+}
+#centerPanel div.round div.clr{
+    clear: both
+}
+
+#centerPanel div.expand{
+    -webkit-animation: expand 1s;
+    -moz-animation: expand 1s;
+    -o-animation: expand 1s;
+    animation: expand 1s;
+    height: 493px;
+}
+
+#rightPanel{
+    position: relative;
+    float:left;
+    z-index: 4;
+    width: 180px;
+    margin: 0 12px 0 440px;
+    padding: 205px 0 50px 0;
+    font-family: BebasRegular, Calibri, sans-serif;
+}
+#rightPanel div.plus:hover{
+    width: 168px;
+}
+#rightPanel div.exp{
+   display: none;
+    background-color: rgba(0,0,0,0.33);
+    padding: 10px;
+    font-family: Calibri;
+    text-transform: uppercase;
+    text-align: right;
+    font-weight: bold;
+    height: 5px;
+    overflow: hidden;
+}
+#rightPanel div.expand{
+    -webkit-animation: expand2 1s;
+    -moz-animation: expand2 1s;
+    -o-animation: expand2 1s;
+    animation: expand2 1s;
+    height: 880px;
+}
+div.exp ul{
+    color: #bade8c;
+    text-align: left;
+
+}
+div.exp ul li{
+    margin: 10px 0 35px;
+    padding: 5px 0;
+    cursor: pointer;
+    border-top: 1px solid transparent;
+    border-bottom: 1px solid transparent;
+}
+div.exp ul li:hover, div.exp ul li.active{
+    border-color: #FFF;
+}
+div.exp ul li > span{
+    font-weight: normal;
+    font-family: BebasRegular, Calibri, sans-serif;
+    color: #FFF;
+    font-size: 96%;
+}
+div.exp ul li > span span{
+    font-size: 85%;
+    margin-left: 4px;
+    color: #F0F0F0;
+}
+
+div.exp ul img{
+    margin: 5px 0;
+}
+
+#tips{
+    position: relative;
+    float:left;
+    z-index: 4;
+    width: 367px;
+    font-family: Calibri, sans-serif;
+    line-height: 20px;
+    font-size: 90%;
+}
+
+#tips div.skill{
+    position: relative;
+    display: none;
+    background-color: rgba(0,0,0,0.56);
+    width: 142px;
+    padding: 10px;
+    margin-bottom: 12px;
+}
+#tips div.skill > div, #tips div.info > div{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    left: -10px;
+    border-style: solid;
+    border-width: 10px 10px 10px 0;
+    border-color: transparent rgba(0,0,0,0.56) transparent transparent;
+}
+#tips div.info{
+    position: relative;
+    display: none;
+    background-color: rgba(0,0,0,0.56);
+    width: 347px;
+    padding: 10px;
+}
+#tips div.info span{
+    color: rgb(134, 238, 0);
+    font-weight: bold;
+}
+
+#tips div.skill > div{
+    bottom: 6px;
+}
+#tips div.info > div{
+    top: 6px;
+}
+#balloon{
+    display: none;
+    position: absolute;
+    left: 50px;
+    top: 50px;
+    background-color: #FFF;
+    border-radius: 120px;
+    z-index: 10;
+    color: #000;
+    font-family: Calibri;
+    padding: 5px 10px ;
+    -moz-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    -webkit-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    -o-box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    box-shadow: 5px 5px 10px 0px rgba(0,0,0,0.5);
+    filter:progid:DXImageTransform.Microsoft.Shadow(color=#656565, Direction=134, Strength=10);
+    text-transform: uppercase;
+    font-size: 80%;
+}
+
+#balloon span{
+    width: 0px;
+    height: 0px;
+    position: absolute;
+    top: -5px;
+    left: 48%;
+    border-style: solid;
+    border-width: 0 5px 5px 5px;
+    border-color: transparent transparent  #FFF transparent;
+}
+#loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index: 4;
+}
+
+div.blink{
+    -webkit-animation:blink 0.2s steps(5, start) 4;
+    -moz-animation:blink 0.2s steps(5, start) 4;
+    -o-animation:blink 0.2s steps(5, start) 4;
+    animation:blink 0.2s steps(5, start) 4;
+}
+
+
+
+@-webkit-keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@-webkit-keyframes expand {
+  from { height: 5px; }
+  to   { height: 493px; }
+}
+@-webkit-keyframes expand2 {
+  from { height: 5px; }
+  to   { height: 880px; }
+}
+@keyframes blink {
+    to {
+        visibility: hidden;
+    }
+}
+@keyframes expand {
+  from { height: 5px; }
+  to   { height: 493px; }
+}
+@keyframes expand2 {
+  from { height: 5px; }
+  to   { height: 880px; }
+}
