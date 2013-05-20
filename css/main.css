@@ -179,7 +179,7 @@ div.plus:hover span{
     -moz-animation: expand 1s;
     -o-animation: expand 1s;
     animation: expand 1s;
-    height: 493px;
+    height: 400px;
 }
 
 #rightPanel{
@@ -342,7 +342,7 @@ div.blink{
 }
 @-webkit-keyframes expand {
   from { height: 5px; }
-  to   { height: 493px; }
+  to   { height: 400px; }
 }
 @-webkit-keyframes expand2 {
   from { height: 5px; }
@@ -355,7 +355,7 @@ div.blink{
 }
 @keyframes expand {
   from { height: 5px; }
-  to   { height: 493px; }
+  to   { height: 400px; }
 }
 @keyframes expand2 {
   from { height: 5px; }
